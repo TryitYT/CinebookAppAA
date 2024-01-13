@@ -6,10 +6,32 @@
     xmlns:local="clr-namespace:CinebookAppAA"
     Shell.FlyoutBehavior="Disabled"
     Title="CinebookAppAA">
-
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <TabBar>
+        <Tab Icon="homepage_40.png" Title="Home">
+            <ShellContent
+                Title="Home"
+                ContentTemplate="{DataTemplate local:MainPage}"
+                Route="MainPage" />
+        </Tab>
+        <Tab Icon="searchmore_40.png" Title="Search">
+            <ShellContent
+                Title="Search"
+                ContentTemplate="{DataTemplate local:SearchPage}"
+                Route="SearchPage" />
+        </Tab>
+        <Tab Icon="movieticket_40.png" Title="Bonus">
+            <ShellContent
+                Title="Bonus"
+                ContentTemplate="{DataTemplate local:BonusPage}"
+                Route="BonusPage" />
+        </Tab>
+        <Tab Icon="shoppingcart_40.png"  Title="Cart">
+            <ShellContent
+                Title="Cart"
+                ContentTemplate="{DataTemplate local:CartPage}"
+                Route="CartPage" />
+        </Tab>
+    </TabBar>
+    
 
 </Shell>
