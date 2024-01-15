@@ -4,9 +4,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CinebookAppAA.SearchPage"
              Title="Search">
-    <VerticalStackLayout Spacing="15" Padding="0, 20" HorizontalOptions="Center" VerticalOptions="Center">
+    <VerticalStackLayout Spacing="15" Padding="0, 20" HorizontalOptions="Center">
+        <Border StrokeShape="RoundRectangle 10,10,10,10" StrokeThickness="2" Background="#D23636">
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="40">
+                <Image Source="searchicon_40.png" HorizontalOptions="Start" VerticalOptions="Center"  HeightRequest="25"  WidthRequest="25" Margin="10,8,0,0"/>
+                <Entry  Placeholder="Search..."  FontFamily="Roboto Condensed" x:Name="Search" WidthRequest="300" HorizontalOptions="End" ZIndex="4" Margin="0,-38,0,0"/>
+            </StackLayout>
+        </Border>
         <Label 
-            Text="Search" TextColor="Aqua" VerticalOptions="Center" HorizontalOptions="Center" FontFamily="OpenSans_Semibold" FontSize="40" FontAttributes="Bold"/>
+            Text="" FontFamily="WorkSans-VariableFont_wght.ttf" FontSize="13"/>
+        <AbsoluteLayout>
+            <Image Source="migration_search.png"></Image>
+            <HorizontalStackLayout>
+                <Label Text="Migration" TextColor="White" FontFamily="WorkSans-VariableFont_wght.ttf" FontAttributes="Bold" FontSize="20" />
+                <Image Source="arrow_40.png" />
+            </HorizontalStackLayout>
+        </AbsoluteLayout>
     </VerticalStackLayout>
     
 </ContentPage>

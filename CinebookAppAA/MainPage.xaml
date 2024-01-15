@@ -17,23 +17,36 @@
             <Label
                 Text="Special Movies"
                 Style="{StaticResource Headline}"
-                SemanticProperties.HeadingLevel="Level1" />
+                SemanticProperties.HeadingLevel="Level1" 
+                FontFamily="Oswald-VariableFont_wght.ttf"
+                HorizontalOptions="Start"
+                TextColor="Black"/>
             
             <ScrollView Orientation="Horizontal">
                 <HorizontalStackLayout>
-                    <StackLayout Orientation="Vertical">
+                    <StackLayout Orientation="Vertical" Padding="20,0,20,0">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnTapped" />
+                        </StackLayout.GestureRecognizers>
                         <Image Source="avengers_endgame.png" />
-                        <HorizontalStackLayout BackgroundColor="#D23636">
-                            <Label Text="Avengers Endgame" FontAttributes="Bold" />
-                            <Label Text="13+/11+" />
-                        </HorizontalStackLayout>
+                        <Border StrokeShape="RoundRectangle 0,0,10,10" BackgroundColor="White" StrokeThickness="0" >
+                            <HorizontalStackLayout BackgroundColor="#D23636" Height="20" Spacing="15" HorizontalOptions="FillAndExpand" Padding="10">
+                                <Label Text="Avengers Endgame" FontAttributes="Bold" TextColor="White" FontFamily="WorkSans-VariableFont_wght.ttf" FontSize="20"/>
+                                <Label Text="13+/11+" TextColor="White" FontFamily="WorkSans-VariableFont_wght.ttf" FontSize="20"/>
+                            </HorizontalStackLayout>
+                        </Border>    
                     </StackLayout>
-                    <StackLayout Orientation="Vertical">
-                        <Image Source="avengers_endgame.png" />
-                        <HorizontalStackLayout BackgroundColor="#D23636">
-                            <Label Text="Avengers Endgame" FontAttributes="Bold" />
-                            <Label Text="13+/11+" />
-                        </HorizontalStackLayout>
+                    <StackLayout Orientation="Vertical" Padding="20,0,20,0">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnTapped" />
+                        </StackLayout.GestureRecognizers>
+                        <Image Source="migration.png" />
+                        <Border StrokeShape="RoundRectangle 0,0,10,10" BackgroundColor="White" StrokeThickness="0" >
+                            <HorizontalStackLayout BackgroundColor="#D23636" Height="20" Spacing="125" HorizontalOptions="FillAndExpand" Padding="10">
+                                <Label Text="Migration" FontAttributes="Bold" TextColor="White" FontFamily="WorkSans-VariableFont_wght.ttf" FontSize="20"/>
+                                <Label Text="6+/6+" TextColor="White" FontFamily="WorkSans-VariableFont_wght.ttf" FontSize="20"/>
+                            </HorizontalStackLayout>
+                        </Border>    
                     </StackLayout>
                 </HorizontalStackLayout>
             </ScrollView>
@@ -41,7 +54,65 @@
             <Label
                 Text="New movies"
                 Style="{StaticResource Headline}"
-                SemanticProperties.HeadingLevel="Level1" />
+                SemanticProperties.HeadingLevel="Level1"
+                FontFamily="Oswald-VariableFont_wght.ttf"
+                HorizontalOptions="Start"
+                TextColor="Black"/>
+            
+                        
+            
+            <ScrollView Orientation="Horizontal">
+                <HorizontalStackLayout>
+                    <StackLayout Orientation="Vertical" Padding="20,0,20,0">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnTapped" />
+                        </StackLayout.GestureRecognizers>
+                        <Image Source="migration.png" />
+                        <Border StrokeShape="RoundRectangle 0,0,10,10" BackgroundColor="White" StrokeThickness="0" >
+                            <HorizontalStackLayout BackgroundColor="#D23636" Height="20" Spacing="125" HorizontalOptions="FillAndExpand" Padding="10">
+                                <Label Text="Migration" FontAttributes="Bold" TextColor="White" FontFamily="WorkSans-VariableFont_wght.ttf" FontSize="20"/>
+                                <Label Text="6+/6+" TextColor="White" FontFamily="WorkSans-VariableFont_wght.ttf" FontSize="20"/>
+                            </HorizontalStackLayout>
+                        </Border>    
+                    </StackLayout>
+                    <StackLayout Orientation="Vertical" Padding="20,0,20,0">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnTapped" />
+                        </StackLayout.GestureRecognizers>
+                        <Image Source="avengers_endgame.png" />
+                        <Border StrokeShape="RoundRectangle 0,0,10,10" BackgroundColor="White" StrokeThickness="0" >
+                            <HorizontalStackLayout BackgroundColor="#D23636" Height="20" Spacing="15" HorizontalOptions="FillAndExpand" Padding="10">
+                                <Label Text="Avengers Endgame" FontAttributes="Bold" TextColor="White" FontFamily="WorkSans-VariableFont_wght.ttf" FontSize="20"/>
+                                <Label Text="13+/11+" TextColor="White" FontFamily="WorkSans-VariableFont_wght.ttf" FontSize="20"/>
+                            </HorizontalStackLayout>
+                        </Border>    
+                    </StackLayout>
+                </HorizontalStackLayout>
+            </ScrollView>
+            
+            <Label
+                Text="Information"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1"
+                FontFamily="Oswald-VariableFont_wght.ttf"
+                HorizontalOptions="Start"
+                TextColor="Black"/>
+            <ScrollView Orientation="Horizontal">
+                <HorizontalStackLayout>
+                    <StackLayout Orientation="Vertical" Padding="20,0,20,0">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnTappedQA" CommandParameter="test"/>
+                        </StackLayout.GestureRecognizers>
+                        <Image Source="migration.png" />
+                        <Border StrokeShape="RoundRectangle 0,0,10,10" BackgroundColor="White" StrokeThickness="0" >
+                            <HorizontalStackLayout BackgroundColor="#D23636" Height="20" Spacing="125" HorizontalOptions="FillAndExpand" Padding="10">
+                                <Label Text="Q/A" FontAttributes="Bold" TextColor="White" FontFamily="WorkSans-VariableFont_wght.ttf" FontSize="20"/>
+                                <Label Text="" TextColor="White" FontFamily="WorkSans-VariableFont_wght.ttf" FontSize="20"/>
+                            </HorizontalStackLayout>
+                        </Border>    
+                    </StackLayout>
+                </HorizontalStackLayout>
+            </ScrollView>
         </VerticalStackLayout>
     </ScrollView>
 
